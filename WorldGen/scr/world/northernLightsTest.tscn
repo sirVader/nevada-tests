@@ -91,6 +91,12 @@ cell_size = Vector2( 32, 32 )
 format = 1
 script = ExtResource( 2 )
 
+[node name="pos1" type="Position2D" parent="worldMap"]
+position = Vector2( 640, 512 )
+
+[node name="pos2" type="Position2D" parent="worldMap"]
+position = Vector2( 192, 128 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 512, 320 )
 smoothing_enabled = true
