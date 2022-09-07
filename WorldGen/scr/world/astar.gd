@@ -6,12 +6,11 @@ var astar: = AStar2D.new()
 # Get the used area of the tilemap
 var tileSize = get_node(".").cell_size
 var size: Vector2 = Vector2((1024 / tileSize.x), (640 / tileSize.y))
-#var size: Vector2 = get_used_rect().size
+
 
 func _ready() -> void:
 	print(size)
 	generate_grid()
-	#place_tiles(generate_path(Vector2(0, 0), Vector2(31, 19)))
 	var pos1 = get_node("pos1").position / 32
 	var pos2 = get_node("pos2").position / 32
 	place_tiles(generate_path(pos1, pos2))

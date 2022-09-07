@@ -31,6 +31,7 @@ func get_path_bfs(start_pos, goal_pos):
 	visited = {}
 	queue.push_back({"pos": start_pos, "last_pos": null})
 	var iters = 0
+	
 	while queue.size() > 0:
 		var cell_info = queue.pop_front()
 		if check_cell(cell_info.pos, cell_info.last_pos, goal_pos):
